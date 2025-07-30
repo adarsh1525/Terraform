@@ -7,7 +7,7 @@ resource "aws_instance" "test" {
     instance_type = "t2.micro"
     ami = "ami-054b7fc3c333ac6d2"
     tags = {
-      Name = var.tagname[count.index]
+      Name = test
     }
    # count = 3
     # instance_type = var.
